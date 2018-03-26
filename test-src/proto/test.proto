@@ -1,0 +1,24 @@
+syntax = "proto2";
+
+package org.nbrahms.protoswole;
+
+message Inner {
+    required int32 first = 1;
+    optional int64 second = 2;
+}
+
+message Pair {
+    required int32 key = 1;
+    required string value = 2;
+}
+
+message Outer {
+    optional int32 int = 1;
+    optional int64 long = 2;
+    optional double double = 3;
+    optional string text = 4;
+    optional bytes bytes = 5;
+    optional Inner inner = 6;
+    repeated string text_seq = 7;
+    repeated Pair int_to_string_map = 8;
+}
