@@ -1,6 +1,6 @@
 name := "protoswole"
 
-version := "0.1-SNAPSHOT"
+version := "0.1"
 
 organization := "org.nbrahms"
 
