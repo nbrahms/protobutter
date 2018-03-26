@@ -40,7 +40,11 @@ The following are not currently supported:
 
 ## Requirements
 
-Requires Scala macros. Add this dependency to your `build.sbt`:
+Requires Scala macros. Add to your `build.sbt`:
 ```
+resolvers += "protoswole" at "https://raw.githubusercontent.com/nbrahms/protoswole/releases/releases/"
+
+libraryDependencies += "org.nbrahms" %% "protoswole" % "0.1"
+
 addCompilerPlugin("org.scalamacros" % "paradise" % "2.1.0" cross CrossVersion.full)
 ```
